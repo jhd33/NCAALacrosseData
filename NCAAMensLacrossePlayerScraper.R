@@ -42,6 +42,7 @@ for (i in urls){
   playerstats <- playerstats %>% 
    rename(Season = season) %>% 
    rename("Jersey Number" = "jersey") %>% 
+   rename("Team" = "team")
    rename("Full Name" = "full_name") %>%
    rename("Roster Name" = "roster_name") %>%
    rename("First Name" = "first_name") %>%
@@ -66,7 +67,8 @@ for (i in urls){
    rename("Faceoffs Won" = "fo_won") %>%
    rename("Faceoffs Taken" = "f_os_taken") %>%
    rename("Faceoff Percentage" = "fo_pct") %>%
-   rename("Penalties" = "pen_time") %>%
+   rename("Penalties" = "pen") %>%
+   rename("Penalty Time" = "pen_time")
    rename("Goalie Games Played" = "ggp") %>%
    rename("Goalie Games Started" = "ggs") %>%
    rename("Goalie Minutes" = "g_min") %>%
